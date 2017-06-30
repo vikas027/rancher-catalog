@@ -1,7 +1,7 @@
 name: Cowcheck
-description: "Monitoring, visualisation and management for Docker"
+description: "Health Check of a Rancher Worker"
 version: latest
-category: Monitoring
-maintainer: "Ilya Dmitrichenko <ilya@weave.works>"
+category: Management
+maintainer: "Vikas Kumar <Vikas.Kumar.3@team.telstra.com"
 license: 
 projectURL: 
