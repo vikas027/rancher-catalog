@@ -16,6 +16,11 @@
       required: true
       default: "ap-southeast-2"
       type: "string"
+    - variable: ecr_repos_account
+      description: "Account where ECR is hosted"
+      label: "ECR Repos Account"
+      required: true
+      type: "string"
 
 cowcheck:
   scale: 1
