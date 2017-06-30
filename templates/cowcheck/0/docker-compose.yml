@@ -1,7 +1,7 @@
 version: '2'
 services:
   cowcheck:
-    image: ${ecr_repos_account}.dkr.ecr.${aws_default_region}.amazonaws.com/cowcheck:latest
+    image: 362622265428.dkr.ecr.ap-southeast-2.amazonaws.com/cowcheck:latest
     stdin_open: true
     dns_search:
     - healthcheck.rancher.internal
