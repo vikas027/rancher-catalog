@@ -4,12 +4,6 @@
   description: "HTTP Health end point of a Rancher Worker"
   minimum_rancher_version: v1.5.0
   questions:
-    - variable: public_port
-      description: "public port to access the wordpress site"
-      label: "Public Port"
-      required: true
-      default: "80"
-      type: "int"
     - variable: aws_region
       description: "AWS Region that hosts the ECR"
       label: "AWS Region"
