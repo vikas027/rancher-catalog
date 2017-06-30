@@ -10,6 +10,12 @@
       required: true
       default: "80"
       type: "int"
+    - variable: aws_region
+      description: "AWS Region that hosts the ECR"
+      label: "AWS Region"
+      required: true
+      default: "ap-southeast-2"
+      type: "string"
 
 cowcheck:
   scale: 1
