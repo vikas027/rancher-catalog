@@ -1,4 +1,4 @@
-wekandb:
+wekandb1:
   image: mongo
 #  volumes:
 #    - ./data/runtime/db:/data/db
@@ -10,9 +10,9 @@ wekandb:
 wekan1:
   image: mquandalle/wekan
   links:
-    - wekandb
+    - wekandb1
   environment:
-    - MONGO_URL=mongodb://wekandb/wekan
+    - MONGO_URL=mongodb://wekandb1/wekan1
     - ROOT_URL=http://localhost:80
   ports:
     - 80:80
