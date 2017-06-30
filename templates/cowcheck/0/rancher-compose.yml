@@ -1,8 +1,7 @@
 .catalog:
   name: cowcheck
   version: v0.1
-  description: |
-    HTTP end point of a Rancher Worker Health Monitor
+  description: "HTTP Health end point of a Rancher Worker"
   minimum_rancher_version: v1.5.0
   questions:
     - variable: AWS_REGION
