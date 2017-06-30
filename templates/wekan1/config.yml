@@ -1,5 +1,7 @@
-name: Wekan1
-description: |
-  The open-source Trello-like kanban (build with Meteor)
-version: v0.1-educaas
-category: Kanban
+name: Cowcheck
+description: "Monitoring, visualisation and management for Docker"
+version: latest
+category: Monitoring
+maintainer: "Ilya Dmitrichenko <ilya@weave.works>"
+license: 
+projectURL: 
