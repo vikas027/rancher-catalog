@@ -1,7 +1,8 @@
 name: Cowcheck
-description: "Health Check of a Rancher Worker"
+description: "HTTP Health end point of a Rancher Worker"
 version: latest
 category: Management
-maintainer: "Vikas Kumar <Vikas.Kumar.3@team.telstra.com"
+maintainer: "TOP Engineering <DMPS-TOP@team.telstra.com>"
+support: "Maintained by Telstra AMP/TOP Team"
 license: 
 projectURL: 
