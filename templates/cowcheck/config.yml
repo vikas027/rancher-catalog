@@ -1,5 +1,5 @@
 name: Cowcheck
 description: |
   Check Health of a Rancher Worker
-  version: latest
-  category: Management
+version: latest
+category: Management
