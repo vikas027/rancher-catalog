@@ -1,4 +1,10 @@
-version: '2'
-services:
-  cowcheck:
-    start_on_create: true
+.catalog:
+  name: "Wekan1"
+  version: "v0.1-educaas"
+  description: "The open-source Trello-like kanban (build with Meteor)"
+  uuid: cloudflare-0
+  minimum_rancher_version: v0.51.0
+  questions:
+
+
+wekan1:

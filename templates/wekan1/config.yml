@@ -1,7 +1,0 @@
-name: Cowcheck
-description: "Health Check of a Rancher Worker"
-version: latest
-category: Management
-maintainer: "Vikas Kumar <Vikas.Kumar.3@team.telstra.com"
-license: 
-projectURL: 
