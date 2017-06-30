@@ -1,10 +1,10 @@
 .catalog:
-  name: "Wekan1"
-  version: "v0.1-educaas"
-  description: "The open-source Trello-like kanban (build with Meteor)"
-  uuid: cloudflare-0
-  minimum_rancher_version: v0.51.0
+  name: cowcheck
+  version: v0.1
+  description: |
+    HTTP end point of a Rancher Worker Health Monitor
+  minimum_rancher_version: v1.5.0
   questions:
 
-
-wekan1:
+cowcheck:
+  scale: 1

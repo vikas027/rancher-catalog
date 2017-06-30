@@ -1,18 +1,19 @@
-wekandb1:
-  image: mongo
-#  volumes:
-#    - ./data/runtime/db:/data/db
-#    - ./data/dump:/dump
-  command: mongod --smallfiles --oplogSize 128
-  ports:
-    - 27017
-
-wekan1:
-  image: mquandalle/wekan
-  links:
-    - wekandb1
-  environment:
-    - MONGO_URL=mongodb://wekandb1/wekan1
-    - ROOT_URL=http://localhost:80
-  ports:
-    - 80:80
+version: '2'
+services:
+  cowcheck:
+    image: ${ECR_REPOS_ACCOUNT}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/cowcheck:latest
+    stdin_open: true
+    dns_search:
+    - healthcheck.rancher.internal
+    - healthcheck.healthcheck.rancher.internal
+    - rancher.internal
+    volumes:
+    - /var/run/docker.sock:/tmp/docker.sock
+    dns:
+    - 169.254.169.250
+    tty: true
+    ports:
+    - 9999:5050/tcp
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
