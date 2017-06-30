@@ -13,7 +13,7 @@ services:
     - 169.254.169.250
     tty: true
     ports:
-    - 9999:5050/tcp
+    - ${host_port}:5050/tcp
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
