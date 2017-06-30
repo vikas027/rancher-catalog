@@ -23,7 +23,7 @@
       type: "string"
     - variable: container_to_monitor
       description: "Container which needs to be monitored"
-      label: "ECR Repos Account"
+      label: "Container to Monitor"
       required: true
       default: "logspout"
       type: "string"
