@@ -5,22 +5,5 @@
     HTTP end point of a Rancher Worker Health Monitor
   minimum_rancher_version: v1.5.0
   questions:
-    - variable: AWS_REGION
-      label: "AWS Region"
-      description: "AWS Region that hosts the ECR"
-      default: ap-southeast-2
-      required: true
-	  type: "string"
-    - variable: ECR_REPOS_ACCOUNT
-      label: "ECR Repos Account"
-      description: "Account where ECR is hosted"
-      required: true
-	  type: "string"
-	- variable: CONTAINER_TO_MONITOR
-	  description: "Container which needs to be monitored"
-      default: ap-southeast-2
-      required: true
-	  type: "string"
 
 cowcheck:
-  scale: 1
