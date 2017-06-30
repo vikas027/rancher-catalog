@@ -3,7 +3,7 @@
   version: v0.1
   description: "HTTP Health end point of a Rancher Worker"
   minimum_rancher_version: v1.5.0
-  questions:
+  questions: 
     - variable: aws_region
       description: "AWS Region that hosts the ECR"
       label: "AWS Region"
@@ -15,6 +15,12 @@
       label: "ECR Repos Account"
       required: true
       type: "string"
+    - variable: host_port
+      description: "Port of HTTP Health Check"
+      label: "Host Port"
+      required: true
+      default: "9999"
+      type: "int"
     - variable: container_to_monitor
       description: "Container which needs to be monitored"
       label: "Container to Monitor"
