@@ -18,7 +18,7 @@
 	  type: "string"
 	- variable: CONTAINER_TO_MONITOR
 	  description: "Container which needs to be monitored"
-      default: logspout
+      default: ap-southeast-2
       required: true
 	  type: "string"
 
