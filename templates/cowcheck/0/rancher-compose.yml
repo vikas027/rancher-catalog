@@ -4,11 +4,12 @@
   description: "HTTP Health end point of a Rancher Worker"
   minimum_rancher_version: v1.5.0
   questions:
-    - variable: AWS_REGION
-      label: "AWS Region"
-      description: "AWS Region that hosts the ECR"
-      default: ap-southeast-2
+    - variable: public_port
+      description: "public port to access the wordpress site"
+      label: "Public Port"
       required: true
+      default: "80"
+      type: "int"
 
 cowcheck:
   scale: 1
