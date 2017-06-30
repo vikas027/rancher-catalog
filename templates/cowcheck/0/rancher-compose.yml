@@ -21,6 +21,12 @@
       label: "ECR Repos Account"
       required: true
       type: "string"
+    - variable: container_to_monitor
+      description: "Container which needs to be monitored"
+      label: "ECR Repos Account"
+      required: true
+      default: "logspout"
+      type: "string"
 
 cowcheck:
   scale: 1
